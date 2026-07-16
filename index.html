@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;700&display=swap" rel="stylesheet">
   <script>(function(){var t;try{t=localStorage.getItem('rakaTheme')}catch(e){}if(!t)t=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();</script>
-  <link rel="stylesheet" href="css/styles.css?v=5">
+  <link rel="stylesheet" href="css/styles.css?v=6">
 </head>
 <body>
 
@@ -88,29 +88,22 @@
   </div>
 
   <main>
-    <!-- ============ HERO ============ -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow gate-sync">Culture-Driven. Media-Forward.</span>
-          <h1 class="gate-sync">
-            <span>We Move</span>
-            <span class="accent">Culture</span>
-            <span>Forward<span class="accent">.</span></span>
-          </h1>
-          <div class="gate-sync">
-            <p>RAKA is a multimedia marketing agency at the intersection of talent, brand, media, and live experience. We don't just tell stories — we build movements.</p>
-            <div class="hero-ctas">
-              <a class="btn" href="contact.html#brands">Work With Us <span class="arrow">→</span></a>
-              <a class="btn btn--ghost" href="contact.html#talent">Join RAKA</a>
-            </div>
+    <!-- ============ HERO — animated shader (smoke + light streaks) ============ -->
+    <section class="hero hero--shader">
+      <canvas id="heroShader" aria-hidden="true"></canvas>
+      <div class="container hero-shader-content">
+        <span class="eyebrow gate-sync">Culture-Driven. Media-Forward.</span>
+        <h1 class="gate-sync">
+          <span>We Move</span>
+          <span class="accent">Culture</span>
+          <span>Forward<span class="sq"></span></span>
+        </h1>
+        <div class="gate-sync">
+          <p>RAKA is a multimedia marketing agency at the intersection of talent, brand, media, and live experience. We don't just tell stories — we build movements.</p>
+          <div class="hero-ctas">
+            <a class="btn" href="contact.html#brands">Work With Us <span class="arrow">→</span></a>
+            <a class="btn btn--ghost" href="contact.html#talent">Join RAKA</a>
           </div>
-        </div>
-        <div class="hero-art">
-          <span class="spark" style="top:4%; left:8%" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg></span>
-          <span class="spark" style="bottom:10%; right:4%" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg></span>
-          <span class="spark" style="top:40%; right:-2%" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg></span>
-          <img src="assets/raka-logo.jpg" alt="Raka World logo — graffiti-style globe with the words RAKA world">
         </div>
       </div>
     </section>
@@ -295,6 +288,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=5"></script>
+  <script src="js/main.js?v=6"></script>
 </body>
 </html>
