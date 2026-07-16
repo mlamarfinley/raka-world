@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact / Join RAKA — Raka World</title>
+  <meta name="description" content="Work with Raka World or join the talent roster. Brand inquiries answered within 48 hours.">
+  <link rel="icon" type="image/jpeg" href="assets/raka-logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>(function(){var t;try{t=localStorage.getItem('rakaTheme')}catch(e){}if(!t)t=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();</script>
+  <link rel="stylesheet" href="css/styles.css?v=4">
+</head>
+<body class="entered">
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="nav-logo" href="index.html" aria-label="Raka World home">
+        <img src="assets/raka-logo.jpg" alt="">
+        <span>raka<span class="accent">.</span></span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="talent.html">Talent</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="experiences.html">Experiences</a></li>
+          <li><a href="login.html">Talent Login</a></li>
+          <li><a class="btn" href="contact.html" aria-current="page">Join RAKA</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+        <span class="orbit" aria-hidden="true">
+          <span class="sun"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4" fill="currentColor" stroke="none"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></span>
+          <span class="moon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
+        </span>
+      </button>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" aria-label="Mobile navigation">
+    <button class="menu-close" type="button" aria-label="Close menu">✕</button>
+    <a href="index.html">Home</a>
+    <a href="talent.html">Talent</a>
+    <a href="media.html">Media</a>
+    <a href="experiences.html">Experiences</a>
+    <a href="login.html">Talent Login</a>
+    <a href="contact.html" class="accent" aria-current="page">Join RAKA →</a>
+  </div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Let's Build</span>
+        <h1>Two ways <span class="accent">in</span><span class="sq"></span></h1>
+        <p>Brands: put your budget inside the culture. Talent: put your career in motion. Pick your lane.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:2rem">
+      <div class="container form-lanes">
+
+        <!-- ============ BRAND LANE ============ -->
+        <div class="form-panel" id="brands">
+          <h2>Let's build something <span class="accent-dark">bold</span><span class="sq"></span></h2>
+          <p class="form-sub">Ready to make culture? Share your brand's vision and our strategy team will reach out within 48 hours.</p>
+          <div style="display:flex; flex-wrap:wrap; gap:0.5rem 1.25rem; margin-bottom:1.5rem">
+            <span class="promise">⚡ Fast Response — within 48 hours</span>
+            <span class="promise">🔒 Confidential — your vision stays protected</span>
+            <span class="promise">✦ Culture-First strategy</span>
+          </div>
+
+          <!-- PLACEHOLDER: replace YOUR_FORM_ID with the real Formspree form ID -->
+          <form data-raka-form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" aria-label="Brand inquiry">
+            <input type="hidden" name="form-type" value="brand-inquiry">
+            <div class="field">
+              <label for="b-first">First Name <span class="req" aria-hidden="true">*</span></label>
+              <input id="b-first" name="first-name" type="text" autocomplete="given-name" required>
+              <span class="error-msg">First name is required.</span>
+            </div>
+            <div class="field">
+              <label for="b-last">Last Name <span class="req" aria-hidden="true">*</span></label>
+              <input id="b-last" name="last-name" type="text" autocomplete="family-name" required>
+              <span class="error-msg">Last name is required.</span>
+            </div>
+            <div class="field">
+              <label for="b-email">Email <span class="req" aria-hidden="true">*</span></label>
+              <input id="b-email" name="email" type="email" autocomplete="email" required>
+              <span class="error-msg">Enter a valid email address.</span>
+            </div>
+            <div class="field">
+              <label for="b-phone">Phone</label>
+              <input id="b-phone" name="phone" type="tel" autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="b-company">Brand / Company Name <span class="req" aria-hidden="true">*</span></label>
+              <input id="b-company" name="company" type="text" autocomplete="organization" required>
+              <span class="error-msg">Company is required.</span>
+            </div>
+            <div class="field">
+              <label for="b-service">Services Interested In</label>
+              <select id="b-service" name="services">
+                <option value="">Select a service...</option>
+                <option>Marketing &amp; Brand Strategy</option>
+                <option>Talent Partnerships</option>
+                <option>Media &amp; Content Creation</option>
+                <option>Experiential &amp; Live Events</option>
+                <option>Full-Service Partnership</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="b-budget">Estimated Budget</label>
+              <select id="b-budget" name="budget">
+                <option value="">Select range...</option>
+                <option>Under $10,000</option>
+                <option>$10,000 – $25,000</option>
+                <option>$25,000 – $50,000</option>
+                <option>$50,000 – $100,000</option>
+                <option>$100,000+</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="b-message">Your Vision <span class="req" aria-hidden="true">*</span></label>
+              <textarea id="b-message" name="message" required></textarea>
+              <span class="error-msg">Tell us a little about your vision.</span>
+            </div>
+            <p class="form-error" hidden style="color:#B3261E; font-size:0.85rem; margin-bottom:1rem">Something went wrong — please try again or email us directly.</p>
+            <button class="btn" type="submit">Submit Inquiry <span class="arrow">→</span></button>
+          </form>
+          <div class="form-success" aria-live="polite">
+            <div class="check">✓</div>
+            <h3>Thank you<span class="sq"></span></h3>
+            <p>We'll be in touch within 48 hours.</p>
+          </div>
+        </div>
+
+        <!-- ============ TALENT LANE ============ -->
+        <div class="form-panel dark-panel" id="talent">
+          <h2>Ready to be on <span class="accent">RAKA</span><span class="sq"></span></h2>
+          <p class="form-sub">Whether you're a talent, content page, or video clipper — apply to join the RAKA roster and we'll connect you with the right opportunities.</p>
+          <span class="promise">✦ Non-exclusive representation — you set your own rates</span>
+
+          <!-- PLACEHOLDER: replace YOUR_FORM_ID with the real Formspree form ID -->
+          <form data-raka-form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" aria-label="Talent application">
+            <input type="hidden" name="form-type" value="talent-application">
+            <div class="field">
+              <label for="t-name">Name <span class="req" aria-hidden="true">*</span></label>
+              <input id="t-name" name="name" type="text" autocomplete="name" required>
+              <span class="error-msg">Your name is required.</span>
+            </div>
+            <div class="field">
+              <label for="t-stage">Stage Name / Artist Name</label>
+              <input id="t-stage" name="stage-name" type="text" placeholder="Your professional name (if different)">
+            </div>
+            <div class="field">
+              <label for="t-category">Category <span class="req" aria-hidden="true">*</span></label>
+              <select id="t-category" name="category" required>
+                <option value="">Select your primary category...</option>
+                <optgroup label="Talent">
+                  <option>Model</option>
+                  <option>Actor / Actress</option>
+                  <option>DJ / Producer</option>
+                  <option>Musical Artist</option>
+                  <option>Influencer / Content Creator</option>
+                  <option>Visual Artist — Painter</option>
+                  <option>Visual Artist — Sculptor</option>
+                  <option>Visual Artist — Other</option>
+                  <option>Photographer</option>
+                  <option>Videographer</option>
+                  <option>Multi-Disciplinary</option>
+                </optgroup>
+                <optgroup label="Content Seeding">
+                  <option>Content Page (Social Media Page)</option>
+                  <option>Video Clipper</option>
+                </optgroup>
+              </select>
+              <span class="error-msg">Pick a category.</span>
+            </div>
+            <div class="field">
+              <label for="t-email">Email <span class="req" aria-hidden="true">*</span></label>
+              <input id="t-email" name="email" type="email" autocomplete="email" required>
+              <span class="error-msg">Enter a valid email address.</span>
+            </div>
+            <div class="field">
+              <label for="t-instagram">Instagram Handle</label>
+              <input id="t-instagram" name="instagram" type="text" placeholder="@yourhandle">
+            </div>
+            <div class="field">
+              <label for="t-tiktok">TikTok Handle</label>
+              <input id="t-tiktok" name="tiktok" type="text" placeholder="@yourhandle">
+            </div>
+            <div class="field">
+              <label for="t-location">Location <span class="req" aria-hidden="true">*</span></label>
+              <input id="t-location" name="location" type="text" placeholder="City, State" required>
+              <span class="error-msg">Location is required.</span>
+            </div>
+            <div class="field">
+              <label for="t-portfolio">Portfolio / Website URL</label>
+              <input id="t-portfolio" name="portfolio" type="url" placeholder="https://yourportfolio.com">
+            </div>
+            <div class="field">
+              <label for="t-message">Bio / Statement <span class="req" aria-hidden="true">*</span></label>
+              <textarea id="t-message" name="message" placeholder="Tell us about yourself, your work, your style, and your goals..." required></textarea>
+              <span class="error-msg">Give us a few lines about your work.</span>
+            </div>
+            <p style="font-size:0.78rem; color:rgba(250,246,240,0.55); margin-bottom:1.25rem">Non-exclusive representation. You set your own pricing — RAKA takes a 30% commission on bookings we facilitate. Applications are reviewed within 5–7 business days.</p>
+            <p class="form-error" hidden style="color:#FF8A5B; font-size:0.85rem; margin-bottom:1rem">Something went wrong — please try again or DM us on Instagram.</p>
+            <button class="btn" type="submit">Submit Application <span class="arrow">→</span></button>
+          </form>
+          <div class="form-success" aria-live="polite">
+            <div class="check">✓</div>
+            <h3>Application received<span class="sq"></span></h3>
+            <p>Check your email for next steps within 5–7 business days.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Building Worlds ✦ Shaping Culture ✦ RAKA. World ✦</span>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/raka-logo.jpg" alt="Raka World logo">
+          <div class="tagline">Building Worlds.<br><span class="accent">Shaping Culture.</span></div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="talent.html">Talent</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="login.html">Talent Login</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/raka.wld/" target="_blank" rel="noopener">Instagram — @raka.wld</a></li>
+            <li><a href="mailto:rakastaa.info@gmail.com">rakastaa.info@gmail.com</a></li>
+            <li><a href="contact.html">Join RAKA</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Raka World. All rights reserved.</span>
+        <span>Atlanta, GA ✦ Everywhere</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=4"></script>
+</body>
+</html>

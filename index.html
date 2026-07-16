@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Raka World — We Move Culture Forward</title>
+  <meta name="description" content="Raka World is a culture-driven multimedia marketing agency in Atlanta — talent representation, brand strategy, media, and live experiences.">
+  <link rel="icon" type="image/jpeg" href="assets/raka-logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>(function(){var t;try{t=localStorage.getItem('rakaTheme')}catch(e){}if(!t)t=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();</script>
+  <link rel="stylesheet" href="css/styles.css?v=4">
+</head>
+<body>
+
+  <!-- ============ ENTER GATE ============ -->
+  <div id="gate" role="dialog" aria-label="Welcome to Raka World">
+    <div class="gate-panel left"></div>
+    <div class="gate-panel right"></div>
+
+    <button class="gate-skip" type="button">Skip →</button>
+
+    <div class="gate-content">
+      <div class="gate-sweep" aria-hidden="true"></div>
+      <img class="gate-logo" src="assets/raka-logo.jpg" alt="Raka World logo — a graffiti-style globe">
+      <div class="gate-words" aria-hidden="false">
+        <span>Building <em class="accent" style="font-style:normal">Worlds</em>.</span>
+        <span><em class="accent" style="font-style:normal">Shaping</em> Culture.</span>
+      </div>
+      <button class="btn gate-enter" type="button">Enter <span class="arrow">→</span></button>
+    </div>
+
+    <svg class="gate-bolt" viewBox="0 0 100 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <path d="M54 0 L46 162 L55 342 L45 540 L53 711 L47 900"></path>
+    </svg>
+
+    <div class="gate-marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>RAKA. WORLD ✦ RAKA. WORLD ✦ RAKA. WORLD ✦</span>
+      </div>
+    </div>
+  </div>
+  <script>
+    /* Prevent gate flash for returning visitors — runs before first paint */
+    if (sessionStorage.getItem('rakaEntered')) {
+      document.getElementById('gate').style.display = 'none';
+    }
+  </script>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="nav-logo" href="index.html" aria-label="Raka World home">
+        <img src="assets/raka-logo.jpg" alt="">
+        <span>raka<span class="accent">.</span></span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="talent.html">Talent</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="experiences.html">Experiences</a></li>
+          <li><a href="login.html">Talent Login</a></li>
+          <li><a class="btn" href="contact.html">Join RAKA</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+        <span class="orbit" aria-hidden="true">
+          <span class="sun"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4" fill="currentColor" stroke="none"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></span>
+          <span class="moon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
+        </span>
+      </button>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" aria-label="Mobile navigation">
+    <button class="menu-close" type="button" aria-label="Close menu">✕</button>
+    <a href="index.html" class="active" aria-current="page">Home</a>
+    <a href="talent.html">Talent</a>
+    <a href="media.html">Media</a>
+    <a href="experiences.html">Experiences</a>
+    <a href="login.html">Talent Login</a>
+    <a href="contact.html" class="accent">Join RAKA →</a>
+  </div>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow gate-sync">Culture-Driven. Media-Forward.</span>
+          <h1 class="gate-sync">
+            <span>We Move</span>
+            <span class="accent">Culture</span>
+            <span>Forward<span class="accent">.</span></span>
+          </h1>
+          <div class="gate-sync">
+            <p>RAKA is a multimedia marketing agency at the intersection of talent, brand, media, and live experience. We don't just tell stories — we build movements.</p>
+            <div class="hero-ctas">
+              <a class="btn" href="contact.html#brands">Work With Us <span class="arrow">→</span></a>
+              <a class="btn btn--ghost" href="contact.html#talent">Join RAKA</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-art">
+          <span class="spark" style="top:4%; left:8%" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg></span>
+          <span class="spark" style="bottom:10%; right:4%" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg></span>
+          <span class="spark" style="top:40%; right:-2%" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg></span>
+          <img src="assets/raka-logo.jpg" alt="Raka World logo — graffiti-style globe with the words RAKA world">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Talent Representation ✦ Brand Strategy ✦ Media &amp; Journalism ✦ Live Experiences ✦ Original Content ✦ Culture Forward ✦</span>
+      </div>
+    </div>
+
+    <!-- ============ WHO WE ARE ============ -->
+    <section class="section">
+      <div class="container split">
+        <div class="reveal">
+          <span class="section-head kicker" style="display:block; margin-bottom:0.75rem">Who We Are</span>
+          <h2>Built on culture.<br>Driven by <span class="accent-dark">vision</span><span class="sq"></span></h2>
+          <p style="margin-top:1.5rem; color:var(--ink-soft)">RAKA sits at the crossroads where creativity meets commerce. We represent the boldest voices in music, fashion, art, and media — and we partner with the brands brave enough to move with them.</p>
+          <p style="margin-top:1rem; color:var(--ink-soft)">From talent discovery and brand consulting to original journalism and live event production, everything we do is designed to make culture move.</p>
+        </div>
+        <div class="reveal">
+          <div class="stat-big"><span data-count="20" data-suffix="M+">0M+</span></div>
+          <div class="stat-label">Views &amp; impressions on social media</div>
+          <blockquote class="brand-quote">"Culture doesn't wait for permission. Neither do we<span class="accent">.</span>"<cite>— RAKA Agency</cite></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BOLT DIVIDER ============ -->
+    <div class="bolt-divider" aria-hidden="true">
+      <svg viewBox="0 0 320 60"><path class="bolt-path" d="M4 30 L84 14 L64 34 L164 18 L144 40 L250 22 L316 30"></path></svg>
+    </div>
+
+    <!-- ============ PILLARS ============ -->
+    <section class="section" id="what-we-do">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">What We Do</span>
+          <h2>Four pillars. One <span class="accent-dark">vision</span><span class="sq"></span></h2>
+          <p style="margin-top:1rem; color:var(--ink-soft)">Every arm of RAKA is designed to amplify culture — through the people who create it, the brands that fund it, the stories that spread it, and the events that embody it.</p>
+        </div>
+        <div class="pillars reveal-stagger">
+          <a class="card" href="talent.html">
+            <span class="card-num">01</span>
+            <h3>Talent &amp; Representation</h3>
+            <p>We represent models, actors, DJs, musical artists, influencers, painters, and sculptors — connecting them with opportunities that match their vision.</p>
+            <span class="card-link">See the roster →</span>
+          </a>
+          <a class="card" href="contact.html#brands">
+            <span class="card-num">02</span>
+            <h3>Marketing &amp; Brand Strategy</h3>
+            <p>From campaign ideation to full-scale brand activation, we help forward-thinking brands find their cultural footing and grow with intention.</p>
+            <span class="card-link">Start a campaign →</span>
+          </a>
+          <a class="card" href="media.html">
+            <span class="card-num">03</span>
+            <h3>Media &amp; Journalism</h3>
+            <p>Original editorial content, brand storytelling, press coverage, and multimedia journalism that lives at the pulse of culture.</p>
+            <span class="card-link">Read the work →</span>
+          </a>
+          <a class="card" href="experiences.html">
+            <span class="card-num">04</span>
+            <h3>Experiential &amp; Live</h3>
+            <p>Pop-ups, concerts, brand activations, and curated live experiences that create lasting memories and cultural moments audiences want to be part of.</p>
+            <span class="card-link">See the events →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MEDIA WALL (dark) ============ -->
+    <section class="section dark">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">In The Field</span>
+          <h2>Proof of work<span class="sq"></span></h2>
+        </div>
+        <!-- PLACEHOLDER: swap .ph blocks for real event photography when available -->
+        <div class="media-wall reveal-stagger">
+          <div class="ph"><span class="ph-big">01</span><span class="ph-label">Showcase Night — ATL</span></div>
+          <div class="ph"><span class="ph-big">02</span><span class="ph-label">Behind the Scenes</span></div>
+          <div class="ph"><span class="ph-big">03</span><span class="ph-label">Campaign Shoot</span></div>
+          <div class="ph"><span class="ph-big">04</span><span class="ph-label">Live at the AUC</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PARTNERS ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal" style="text-align:center">
+          <span class="kicker">Trusted By</span>
+        </div>
+        <div class="partners reveal">
+          <img src="assets/logos/morehouse.jpg" alt="Morehouse College">
+          <img src="assets/logos/bmi.png" alt="BMI">
+          <img src="assets/logos/capitol-records.png" alt="Capitol Records">
+          <img src="assets/logos/vitamin-energy.png" alt="Vitamin Energy">
+          <img src="assets/logos/celsius.png" alt="Celsius">
+          <img src="assets/logos/carbice.svg" alt="Carbice">
+          <img src="assets/logos/6lement.png" alt="6lement">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOUNDER ============ -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="founder reveal">
+          <!-- PLACEHOLDER: replace with founder headshot -->
+          <div class="founder-photo" role="img" aria-label="Placeholder for Adeyemi Mitchell's headshot">AM</div>
+          <div>
+            <h3>Adeyemi Mitchell<span class="sq"></span></h3>
+            <div class="founder-role">Founder — Morehouse '28</div>
+            <p>Sony Music Student Marketing Representative, Grammy U Lead Ambassador, and President of the National Collegiate Entertainers Group. Raka World is what happens when you stop waiting for a seat at the table.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE 2 ============ -->
+    <div class="marquee marquee--orange" aria-hidden="true">
+      <div class="marquee-track">
+        <span>We Move Culture Forward ✦ Atlanta &amp; Everywhere ✦</span>
+      </div>
+    </div>
+
+    <!-- ============ CLOSING CTA ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal" style="text-align:center">
+          <span class="kicker">Ready?</span>
+          <h2>Your culture moment starts <span class="accent-dark">here</span><span class="sq"></span></h2>
+        </div>
+        <div class="cta-split reveal-stagger">
+          <div class="cta-panel orange">
+            <h3>For Brands</h3>
+            <p>Ready to make culture? Share your brand's vision and our strategy team will reach out within 48 hours.</p>
+            <a class="btn" href="contact.html#brands">Partner With Us <span class="arrow">→</span></a>
+          </div>
+          <div class="cta-panel black">
+            <h3>For Talent</h3>
+            <p>Whether you're a creator ready to be represented or a brand ready to move culture — RAKA is your next call.</p>
+            <a class="btn" href="contact.html#talent">Join as Talent <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/raka-logo.jpg" alt="Raka World logo">
+          <div class="tagline">Building Worlds.<br><span class="accent">Shaping Culture.</span></div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="talent.html">Talent</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="login.html">Talent Login</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/raka.wld/" target="_blank" rel="noopener">Instagram — @raka.wld</a></li>
+            <!-- PLACEHOLDER: replace with real contact email -->
+            <li><a href="mailto:rakastaa.info@gmail.com">rakastaa.info@gmail.com</a></li>
+            <li><a href="contact.html">Join RAKA</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Raka World. All rights reserved.</span>
+        <span>Atlanta, GA ✦ Everywhere</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=4"></script>
+</body>
+</html>

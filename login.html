@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Talent Login — Raka World</title>
+  <meta name="description" content="Talent portal login for Raka World roster members.">
+  <link rel="icon" type="image/jpeg" href="assets/raka-logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>(function(){var t;try{t=localStorage.getItem('rakaTheme')}catch(e){}if(!t)t=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);})();</script>
+  <link rel="stylesheet" href="css/styles.css?v=4">
+</head>
+<body class="entered">
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="nav-logo" href="index.html" aria-label="Raka World home">
+        <img src="assets/raka-logo.jpg" alt="">
+        <span>raka<span class="accent">.</span></span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="talent.html">Talent</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="experiences.html">Experiences</a></li>
+          <li><a href="login.html" class="active" aria-current="page">Talent Login</a></li>
+          <li><a class="btn" href="contact.html">Join RAKA</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+        <span class="orbit" aria-hidden="true">
+          <span class="sun"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4" fill="currentColor" stroke="none"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></span>
+          <span class="moon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
+        </span>
+      </button>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" aria-label="Mobile navigation">
+    <button class="menu-close" type="button" aria-label="Close menu">✕</button>
+    <a href="index.html">Home</a>
+    <a href="talent.html">Talent</a>
+    <a href="media.html">Media</a>
+    <a href="experiences.html">Experiences</a>
+    <a href="login.html" class="active" aria-current="page">Talent Login</a>
+    <a href="contact.html" class="accent">Join RAKA →</a>
+  </div>
+
+  <main>
+    <div class="login-wrap">
+      <div class="login-card">
+        <h1>Talent <span class="accent">Login</span><span class="sq"></span></h1>
+        <p>Roster members: sign in to access bookings, briefs, and assets.</p>
+
+        <!-- FRONT-END ONLY: no real authentication is wired up yet -->
+        <form data-raka-form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" aria-label="Talent login">
+          <input type="hidden" name="form-type" value="talent-login-interest">
+          <div class="field">
+            <label for="login-email">Email <span class="req" aria-hidden="true">*</span></label>
+            <input id="login-email" name="email" type="email" autocomplete="email" required>
+            <span class="error-msg">Enter a valid email address.</span>
+          </div>
+          <div class="field">
+            <label for="login-pass">Password <span class="req" aria-hidden="true">*</span></label>
+            <input id="login-pass" name="password" type="password" autocomplete="current-password" required>
+            <span class="error-msg">Password is required.</span>
+          </div>
+          <p class="form-error" hidden style="color:#B3261E; font-size:0.85rem; margin-bottom:1rem">Something went wrong — please try again.</p>
+          <button class="btn" type="submit" style="width:100%; justify-content:center">Sign In <span class="arrow">→</span></button>
+        </form>
+        <div class="form-success" aria-live="polite">
+          <div class="check">✓</div>
+          <h3>Portal coming soon<span class="sq"></span></h3>
+          <p>The talent portal is under construction. We'll notify you the moment it opens.</p>
+        </div>
+
+        <p style="margin-top:1.75rem; font-size:0.9rem">Not on the roster yet? <a href="contact.html#talent" class="accent-dark" style="font-weight:700">Join RAKA →</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/raka-logo.jpg" alt="Raka World logo">
+          <div class="tagline">Building Worlds.<br><span class="accent">Shaping Culture.</span></div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="talent.html">Talent</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="login.html">Talent Login</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/raka.wld/" target="_blank" rel="noopener">Instagram — @raka.wld</a></li>
+            <li><a href="mailto:rakastaa.info@gmail.com">rakastaa.info@gmail.com</a></li>
+            <li><a href="contact.html">Join RAKA</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Raka World. All rights reserved.</span>
+        <span>Atlanta, GA ✦ Everywhere</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=4"></script>
+</body>
+</html>
