@@ -588,6 +588,7 @@ p { max-width: 62ch; }
   height: 120px;
   border-radius: 50%;
   border: 3px solid var(--orange);
+  object-fit: cover;
   background:
     radial-gradient(ellipse at 35% 30%, rgba(255, 107, 26, 0.9), transparent 65%),
     #111;
